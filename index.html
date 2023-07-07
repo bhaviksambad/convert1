@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Format Converter</title>
+</head>
+<body>
+  <h1>File Format Converter</h1>
+  <form action="convert.py" method="post" enctype="multipart/form-data">
+    <label for="file">Select file:</label>
+    <input type="file" id="file" name="file">
+    <br>
+    <label for="input-format">Select input format:</label>
+    <select id="input-format" name="input-format">
+      <option value="txt">TXT</option>
+      <option value="csv">CSV</option>
+      <option value="xlsx">XLSX</option>
+      <option value="jpg">JPG</option>
+      <option value="pdf">PDF</option>
+      <option value="xml">XML</option>
+      <!-- Add more options for other input formats as needed -->
+    </select>
+    <br>
+    <label for="output-format">Select output format:</label>
+    <select id="output-format" name="output-format">
+      <option value="txt">TXT</option>
+      <option value="csv">CSV</option>
+      <option value="xlsx">XLSX</option>
+      <option value="jpg">JPG</option>
+      <option value="pdf">PDF</option>
+      <option value="xml">XML</option>
+      <!-- Add more options for other output formats as needed -->
+    </select>
+    <br>
+    <input type="submit" value="Convert">
+  </form>
+</body>
+</html>
